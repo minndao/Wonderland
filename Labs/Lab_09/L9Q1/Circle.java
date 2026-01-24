@@ -9,13 +9,13 @@ public class Circle extends Shape {
         super("Circle");
     }
 
-    public void inputDiameter() {
-        Scanner input = new Scanner(System.in);
+    public void inputDiameter(Scanner input) {
        
        System.out.println("Enter the diameter: ");
       this.diameter = input.nextDouble();
 
-       input.close();
+       computeArea();
+       computePerimeter();
     }
 
     public void computePerimeter() {

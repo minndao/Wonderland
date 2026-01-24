@@ -5,10 +5,9 @@ public class Shape {
     private double perimeter;
     private double area;
 
-    Shape(String name, double perimeter, double area) {
+    Shape(String name) {
         this.name = name;
-        this.perimeter = perimeter;
-        this.area = area;
+        
     }
 
     public double getPerimeter() {
@@ -19,8 +18,17 @@ public class Shape {
         return this.area;
     }
 
+    public void setPerimeter(double perimeter) {
+        this.perimeter = perimeter;
+    }
+
+    public void setArea(double area) {
+        this.area = area;
+    }
+
     public void display() {
-        System.out.println("Name of the shape: " + this.name);
+        System.out.println("\nName of the shape: " + this.name);
         System.out.printf("Perimeter: %.2f\nArea: %.2f",perimeter,area);
+        System.out.println();
     }
 }
