@@ -40,9 +40,11 @@ public class T7Q3 {
                    whole += print;
                 }
                 System.out.println(whole);
+                        sc.close();
 
         } catch (IOException e) {
             System.out.println("Error with the file input");
         }
+        input.close();
     }
 }

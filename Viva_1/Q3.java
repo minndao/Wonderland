@@ -19,14 +19,14 @@ import java.util.Scanner;
 
 /**
  *
- * @author ekitstrap
+ * 
  */
 public class Q3 {
 
     public static void main(String[] args) {
         // Setup object imports and variables
         Scanner input = new Scanner(System.in);
-
+        
         // Receive the number of queries (q) first
         System.out.print("Please input the number of queries: ");
         int q = input.nextInt();
@@ -75,6 +75,7 @@ public class Q3 {
             }
             System.out.println();
         }
+        
+        input.close();
     }
-
 }

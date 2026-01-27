@@ -16,7 +16,7 @@ public class L2Q4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
         System.out.println("Enter the number in second.");
        Scanner input = new Scanner (System.in);
        int s = input.nextInt();

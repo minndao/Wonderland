@@ -64,6 +64,6 @@ public class Q6{
                 System.out.print(length+ " ");
             }
            
-        }
+        } input.close();
     }
 }

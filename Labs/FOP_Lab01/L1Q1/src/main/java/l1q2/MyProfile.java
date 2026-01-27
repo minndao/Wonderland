@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package l1q2;
+package Labs.FOP_Lab01.L1Q1.src.main.java.l1q2;
 
 /**
  *
@@ -29,5 +29,5 @@ public class MyProfile {
         System.out.printf("%-20s: %s\n", "Contact Number", contactNumber);
         System.out.printf("%-20s: %s\n", "Address", address);
         System.out.println("==================================================================================================");
-  
+    }}
      

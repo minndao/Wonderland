@@ -18,6 +18,7 @@ public class Q7 {
         double b = a.nextDouble();
         double c = b * 0.0254;
         System.out.printf("The value in meters is %.2f",c);
+        a.close();
         
     }
 }

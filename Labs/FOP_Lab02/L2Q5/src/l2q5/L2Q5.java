@@ -16,7 +16,6 @@ public class L2Q5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
        Random r = new Random () ;
        int randomvalue = r.nextInt(10001);
         System.out.println(randomvalue);
@@ -35,4 +34,4 @@ public class L2Q5 {
        
     }
     
-}
+

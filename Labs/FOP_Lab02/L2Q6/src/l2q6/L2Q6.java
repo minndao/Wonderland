@@ -34,7 +34,7 @@ public class L2Q6 {
    
         System.out.println("The energy needed to heat the water is " + Q +"J.");
         
-        
+        input.close();
         
         
     }

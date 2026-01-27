@@ -3,7 +3,6 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import javax.swing.InputMap;
 
 public class L7Q5 {
     public static void main(String[] args) {
@@ -11,11 +10,23 @@ public class L7Q5 {
         ObjectInputStream input = new ObjectInputStream (new FileInputStream ("Lab07/person.dat"));
         int TotalNumberofRecord = input.readInt();
             
-        for (int i = 0; i < TotalNumberofRecord; i++){
-            String name = input.readUTF();
-            int age = input.nextInt();
-            char gender = input.nextChar();
+            String name = "";
+            int age = 0;
+            char gender = ' ';
+            
+            for (int i = 0; i < TotalNumberofRecord; i++){
+                name = input.readUTF();
+                age = input.readInt();
+                gender = input.readChar();
+    
+            }
 
+            System.out.println(name + age + gender);
+            input.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-    }}
+    }
 }

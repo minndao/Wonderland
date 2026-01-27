@@ -22,6 +22,7 @@ public class Q6 {
         double circumference = diameter * Math.PI;
         
         System.out.printf("The circumference of the circle is %.3f" ,  circumference);
+        in.close();
         
            
     }

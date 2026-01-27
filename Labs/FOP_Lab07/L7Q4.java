@@ -1,6 +1,5 @@
-import java.io.ObjectInputStream;
+
 import java.io.FileNotFoundException;
-import java.io.IOException;
 import java.io.FileInputStream;
 import java.util.Scanner;
 
@@ -25,8 +24,6 @@ public class L7Q4 {
              System.out.println("Number of characters: " + charCount);
         } catch (FileNotFoundException e){
             System.out.println("File not found.");
-        } catch (IOException e){
-            System.out.println("An I/O error occurred.");
-        }
+        } 
     }
 }

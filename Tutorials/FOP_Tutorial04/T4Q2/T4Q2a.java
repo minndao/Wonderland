@@ -7,6 +7,8 @@ public class T4Q2a {
         for (int x = 10; x>0; x++){
              sum += x ;
         }
+
+        System.out.println(sum);
         
     }
 }

@@ -2,6 +2,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
+import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
 import java.util.Scanner;
@@ -9,7 +10,7 @@ import java.util.Scanner;
 public class L7Q2 {
     public static void main (String[] args){
         try {
- URL u = new URL("http://www.fsktm.um.edu.my");
+ URL u = URL.of(URI.create("http://www.fsktm.um.edu.my"), null);
  URLConnection cnn = u.openConnection();
  InputStream stream = cnn.getInputStream();
  Scanner in = new Scanner(stream);
